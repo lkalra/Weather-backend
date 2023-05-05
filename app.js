@@ -9,7 +9,7 @@ const port = process.env.PORT || 8000
 app.use(bodyParser.urlencoded({extended: true}))
 
 app.get("/", function(req, res){
-    res.sendFile(__dirname + "/index.html")
+    res.sendFile(__dirname + "https://weatherapi-tmhn.onrender.com")
     // res.send("Hello, World!")
 })
 
