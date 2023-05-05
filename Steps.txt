@@ -1,0 +1,30 @@
+open node cmd 
+check if its c drive make it d - d:
+create a folder for project - mkdir _folderName
+enter in the same folder - cd _folderName
+create a new file - touch _fileName
+fill the details - npm init (json file will be created)
+add the folder in vsCode
+install dependency in json file - npm install express (created node module folder and lock json file)
+include - require express in _fileName
+create root route method with app.get
+send some words 
+signup server on port with app.listen
+run server with nodemon - install -g nodemon thn - nodemon _fileName
+
+to get information from webApp from post req - npm install body parse
+require it
+
+
+
+const express = require("express")
+const app = express()
+
+app.get("/", function(req, res){
+    res.send("Hello, World!")
+})
+
+
+app.listen(3000,function(){
+    console.log("Server started")
+})
