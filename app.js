@@ -4,6 +4,7 @@ const https = require("https")
 const bodyParser = require("body-parser")
 
 const app = express()
+const port = process.env.PORT || 8000
 
 app.use(bodyParser.urlencoded({extended: true}))
 
@@ -37,6 +38,6 @@ app.post("/", function(req, res){
 })
 
 
-app.listen(3000,function(){
-    console.log("Server started")
+app.listen(port,function(){
+    console.log("Server started "+ port)
 })
